@@ -18,6 +18,7 @@ router.get('/city/:cityName', function(req,res){
       condition: JsCode.weather[0].description,
       conditionPic: JsCode.weather[0].icon
   }
+  console.log(weatherData.temperature)
   res.send(weatherData)
   })
 

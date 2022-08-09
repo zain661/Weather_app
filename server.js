@@ -4,7 +4,7 @@ const path = require('path')
 const axios = require('axios')
 const api = require('./server/routes/api.js')
 const mongoose = require ('mongoose')
-const port = 2002
+const port = 2004
 
 
 app.use(express.static(path.join(__dirname, "dist")));

@@ -1,3 +1,86 @@
 body{
-    background-color: rgb(67, 67, 248);
+    background-color: rgb(37, 110, 152);
 }
+
+.city-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    border-style: outset;
+    grid-template-areas: "s""t""c";
+    font-size: 50px;
+    margin-top: 30px;
+    color: aliceblue;
+    box-shadow: 1px 1px 5px #2c3e50;
+}
+
+.removeSign{
+    grid-area: "s";
+    margin-top: 38px;
+    font-size: 26px;
+    margin-top: 71px;
+    color: red;
+}
+
+.tempr{
+    grid-area: "t";
+    padding-top: 30px;
+    font-size: 28px;
+}
+
+.con{
+    grid-area: "c";
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+.saveSign{
+    grid-area: "s";
+    margin-top: 38px;
+    font-size: 26px;
+    margin-top: 71px;
+    color: black;
+}
+
+img{
+    width: 81px;
+    height: 77px;
+    margin-top: -19px;
+}
+
+::placeholder { 
+    color: rgb(236, 231, 231);
+    opacity: 1; 
+  }
+
+input{
+    width:70%;
+    height: 50px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    color: white;
+    font-size: 30px;
+    background:  linear-gradient(90deg,#ccc,#ccc)  bottom/100% 5px no-repeat;
+}
+ 
+
+
+
+button{
+    background: transparent;
+    width: 42px;
+    height: 34px;
+    border : none
+}
+::before{
+    width: 15%;
+    height: 50px;
+    font-size: 30px; 
+    color: white;
+    background-color: transparent;
+    border: none;
+   
+}
+

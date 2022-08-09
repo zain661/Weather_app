@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
     <title>Document</title>
   </head>
@@ -13,14 +14,19 @@
            {{#each allCityData}}
                <div class="city-container">
                  {{#if saved}}
-                    <i class="fa fa-minus-circle removeSign">remove</i>
+                    <i class="fa fa-minus-circle removeSign"></i>
                 {{else}}
-                    <i class="fa fa-plus-circle saveSign">save</i>
+                    <i class="fa fa-plus-circle saveSign"></i>
                 {{/if}} 
-           <p class="cityName">{{name}}</p>
-          <p>{{temprature}}</p>
-          <p>{{condition}}</p>
+                <div class="tempr">
+                  <p class="cityName">{{name}}</p>
+                  <p>{{temperature}}</p>
+                </div>
+          <div class="con">
+            <p>{{condition}}</p>
           <img class="conditionPic" src="http://openweathermap.org/img/w/{{conditionPic}}.png">
+          </div>
+          
       </div>
            {{/each}}
     </script>
@@ -28,7 +34,7 @@
     <!-- <div class="container"> -->
       <div class="head">
         <input id="city-input" type="text" placeholder="City Name" />
-        <button onclick="handleSearch()"></button>
+        <button onclick="handleSearch()"><i class="fa fa-search icon-search"></i></button>
       </div>
       <div class="main"></div>
     <!-- </div> -->
